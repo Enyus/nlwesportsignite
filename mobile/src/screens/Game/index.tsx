@@ -8,7 +8,7 @@ import { Background } from '../../components/Background';
 import { THEME } from '../../theme';
 import { styles } from './styles';
 import { GameParams } from '../../@types/navigation';
-import { TouchableOpacity, View, Image, FlatList } from 'react-native';
+import { TouchableOpacity, View, Image, FlatList, Text } from 'react-native';
 import { Heading } from '../../components/Heading';
 import { DuoCard, DuoCardProps } from '../../components/DuoCard';
 import { useEffect, useState } from 'react';
@@ -65,7 +65,19 @@ export function Game() {
                     data={duos}
                     keyExtractor={item => item.id}
                     renderItem={ ({ item }) => (
-                        <DuoCard data={item}/>
+                        <DuoCard
+                        data={item}
+                        onConnect={ () => {} }
+                        />
+                    )}
+                    horizontal
+                    style={styles.containerList}
+                    contentContainerStyle={[duos.length > 0 ? styles.contentList : styles.emptyListContent]}
+                    showsHorizontalScrollIndicator={false}
+                    ListEmptyComponent={ () => (
+                        <Text style={styles.emptyListText}>
+                            Não há anúncios publicados ainda.
+                        </Text>
                     )}
                 />
             </SafeAreaView>
