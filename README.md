@@ -3,12 +3,12 @@ Trilha Ignite da Next Level Week E-Sports da Rocketseat, realizada em Setembro/2
 
 ## Server
 Server criado com Node, Express e Prisma, a ser usado tanto nas aplicações web como mobile.
-![server_rodando](https://i.imgur.com/BU2fLE8.gif)
+![server_rodando](./.github/server_gif.gif)
 
 ## Web
 Aplicativo web com funcionalidade de criar anúncios de 'Procurando Duo' criado com React
 ![preview](./.github/web_screenshot.png)
-![web_rodando](https://i.imgur.com/j5itZci.gif)
+![web_rodando](./.github/web_gif.gif)
 
 ## Mobile
 Aplicativo mobile com funcionalidade de ver os anúncios criados e copiar o discord do anunciante.
