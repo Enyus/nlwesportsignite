@@ -12,7 +12,7 @@ export interface DuoCardProps {
     name: string,
     useVoiceChannel: boolean,
     weekDays: string[],
-    yearPlaying: number
+    yearsPlaying: number
 }
 
 interface Props {
@@ -29,7 +29,7 @@ export function DuoCard({ data, onConnect }: Props) {
             />
             <DuoInfo
                 label='Tempo de Jogo'
-                value={`${data.yearPlaying} anos`}
+                value={`${data.yearsPlaying} anos`}
             />
             <DuoInfo
                 label='Disponibilidade'

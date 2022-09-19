@@ -12,11 +12,12 @@ export const styles = StyleSheet.create({
         alignContent: 'center',
         paddingHorizontal: 32,
         marginTop: 28,
+        marginBottom: 28,
         justifyContent: 'space-between'
     },
     logo: {
         width: 72,
-        height: 40
+        height: 40,
     },
     right: {
         width: 20,
